@@ -19,5 +19,5 @@ function MakeStudent(name, email, promedio) {
 }
 
 let user1 = new MakeStudent('Alexander', 'ajcalle@sudamericano.edu.ec', 85);
-alert(user1.validarPromedio())
-alert(user1.getUser())
+alert(user1.validarPromedio());
+alert(user1.getUser());
