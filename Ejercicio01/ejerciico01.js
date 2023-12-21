@@ -6,18 +6,18 @@ function MakeStudent(name, email, promedio) {
   this.promedio = promedio
   this.validarPromedio = function(){
     if (this.promedio >= 70) {
-      alert('Aprobado');
+      return 'Aprobado';
     } else if(this.promedio <= 70) {
-      alert('Reprobado');
+      return 'Reprobado';
     }
   }
   this.getUser = function() {
     let sep= this.email.indexOf("@");
     let username = this.email.substring(0, sep);
-    alert(username);
+    return username;
   }
 }
 
-let User1 = new MakeStudent('Alexander', 'ajcalle@sudamericano.edu.ec', 85);
-User1.validarPromedio();
-User1.getUser();
+let user1 = new MakeStudent('Alexander', 'ajcalle@sudamericano.edu.ec', 85);
+alert(user1.validarPromedio())
+alert(user1.getUser())
