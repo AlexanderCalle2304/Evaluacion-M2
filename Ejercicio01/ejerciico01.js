@@ -8,7 +8,7 @@ function MakeStudent(name, email, promedio) {
     if (this.promedio >= 70) {
       alert('Aprobado');
     } else if(this.promedio <= 70) {
-      console.alert('Reprobado');
+      alert('Reprobado');
     }
   }
   this.getUser = function() {
