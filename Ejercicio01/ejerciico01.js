@@ -6,15 +6,15 @@ function MakeStudent(name, email, promedio) {
   this.promedio = promedio
   this.validarPromedio = function(){
     if (this.promedio >= 70) {
-      console.log('Aprobado');
+      alert('Aprobado');
     } else if(this.promedio <= 70) {
-      console.log('Reprobado');
+      console.alert('Reprobado');
     }
   }
   this.getUser = function() {
     let sep= this.email.indexOf("@");
     let username = this.email.substring(0, sep);
-    console.log(username);
+    alert(username);
   }
 }
 
